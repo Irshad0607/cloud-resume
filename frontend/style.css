@@ -1,0 +1,193 @@
+/* =====================
+   GLOBAL RESET & BASE
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f1117;
+    color: #e0e0e0;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* =====================
+   MAIN CONTAINER
+   ===================== */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #1a1d27;
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* =====================
+   HEADER
+   ===================== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #2e3248;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin: 8px 0 16px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.contact-info a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   VISITOR COUNTER
+   ===================== */
+.visitor-counter {
+    text-align: center;
+    background: #1e2235;
+    border: 1px solid #2e3248;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 35px;
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.visitor-counter span {
+    color: #34d399;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #60a5fa;
+    border-bottom: 2px solid #2e3248;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #cbd5e1;
+    font-size: 0.97rem;
+}
+
+/* =====================
+   SKILLS GRID
+   ===================== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #1e2235;
+    border: 1px solid #3b4fd8;
+    color: #60a5fa;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* =====================
+   PROJECT CARD
+   ===================== */
+.project-card {
+    background: #1e2235;
+    border: 1px solid #2e3248;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.project-card h3 {
+    color: #f1f5f9;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: #3b4fd8;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #60a5fa;
+}
+
+/* =====================
+   EDUCATION & CERTS
+   ===================== */
+.education-item h3, .cert-item h3 {
+    color: #f1f5f9;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

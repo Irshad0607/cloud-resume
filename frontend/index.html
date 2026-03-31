@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name — Cloud Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER SECTION -->
+        <header>
+            <h1>Your Full Name</h1>
+            <p class="tagline">Aspiring Cloud Engineer | Azure | Exploring Cloud Technologies</p>
+            <div class="contact-info">
+                <span>📧 youremail@gmail.com</span>
+                <span>🔗 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></span>
+                <span>🐙 <a href="https://github.com/yourusername">GitHub</a></span>
+                <span>📍 Mumbai, India</span>
+            </div>
+        </header>
+
+        <!-- VISITOR COUNTER -->
+        <div class="visitor-counter">
+            <p>👀 You are visitor number: <span id="counter">Loading...</span></p>
+        </div>
+
+        <!-- SUMMARY SECTION -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Motivated and eager-to-learn individual currently building hands-on skills 
+                in cloud computing. Completed the Azure Cloud Resume Challenge, demonstrating 
+                practical experience with Azure Static Web Apps, Azure Functions, Azure Cosmos DB, 
+                and CI/CD pipelines via GitHub Actions. Passionate about solving real-world 
+                problems through technology.
+            </p>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Azure Static Web Apps</div>
+                <div class="skill-tag">Azure Functions</div>
+                <div class="skill-tag">Azure Cosmos DB</div>
+                <div class="skill-tag">HTML / CSS</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Git & GitHub</div>
+                <div class="skill-tag">CI/CD Pipelines</div>
+                <div class="skill-tag">Serverless Architecture</div>
+            </div>
+        </section>
+
+        <!-- PROJECT SECTION -->
+        <section>
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>☁️ Azure Cloud Resume Challenge</h3>
+                <p>
+                    Built and deployed a full-stack cloud resume website with a real-time 
+                    visitor counter. The frontend is hosted on Azure Static Web Apps and 
+                    connected to a serverless Azure Function backend, which reads and 
+                    updates a counter stored in Azure Cosmos DB.
+                </p>
+                <p><strong>Technologies:</strong> Azure Static Web Apps, Azure Functions, 
+                Azure Cosmos DB, JavaScript, HTML/CSS, GitHub Actions</p>
+                <a href="https://github.com/yourusername/cloud-resume" class="btn">
+                    View on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Your Degree — Your College Name</h3>
+                <p>Year of Graduation | Your City, India</p>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section>
+            <h2>Certifications</h2>
+            <div class="cert-item">
+                <p>🏆 Add any certifications here (or remove this section if none yet)</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- This JavaScript will fetch the visitor count — we'll complete this on Day 4 -->
+    <script>
+        async function updateCounter() {
+            try {
+                const response = await fetch('/api/counter');
+                const data = await response.json();
+                document.getElementById('counter').innerText = data.count;
+            } catch (error) {
+                document.getElementById('counter').innerText = '—';
+            }
+        }
+        updateCounter();
+    </script>
+
+</body>
+</html>
