@@ -1,99 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name — Cloud Resume</title>
+    <title>Irshad Shaikh — Azure Cloud Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
 
-        <!-- HEADER SECTION -->
+        <!-- ── HEADER ── -->
         <header>
-            <h1>Your Full Name</h1>
-            <p class="tagline">Aspiring Cloud Engineer | Azure | Exploring Cloud Technologies</p>
+            <h1>Irshad Shaikh</h1>
+            <p class="tagline">Azure Administrator Associate &nbsp;|&nbsp; Cloud Computing Fresher &nbsp;|&nbsp; AZ-900 &amp; AZ-104 (Preparing)</p>
             <div class="contact-info">
-                <span>📧 youremail@gmail.com</span>
-                <span>🔗 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></span>
-                <span>🐙 <a href="https://github.com/yourusername">GitHub</a></span>
+                <span>📧 <a href="mailto:shkirshadabid@gmail.com">shkirshadabid@gmail.com</a></span>
+                <span>📞 +91 8591823250</span>
                 <span>📍 Mumbai, India</span>
+                <span>🔗 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></span>
+                <span>🐙 <a href="https://github.com/Irshad0607" target="_blank">GitHub</a></span>
             </div>
         </header>
 
-        <!-- VISITOR COUNTER -->
+        <!-- ── VISITOR COUNTER ── -->
         <div class="visitor-counter">
             <p>👀 You are visitor number: <span id="counter">Loading...</span></p>
         </div>
 
-        <!-- SUMMARY SECTION -->
+        <!-- ── CAREER OBJECTIVE ── -->
         <section>
-            <h2>About Me</h2>
-            <p>
-                Motivated and eager-to-learn individual currently building hands-on skills 
-                in cloud computing. Completed the Azure Cloud Resume Challenge, demonstrating 
-                practical experience with Azure Static Web Apps, Azure Functions, Azure Cosmos DB, 
-                and CI/CD pipelines via GitHub Actions. Passionate about solving real-world 
-                problems through technology.
-            </p>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-tag">Azure Static Web Apps</div>
-                <div class="skill-tag">Azure Functions</div>
-                <div class="skill-tag">Azure Cosmos DB</div>
-                <div class="skill-tag">HTML / CSS</div>
-                <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">Git & GitHub</div>
-                <div class="skill-tag">CI/CD Pipelines</div>
-                <div class="skill-tag">Serverless Architecture</div>
+            <h2>Career Objective</h2>
+            <div class="highlight-box">
+                <p>
+                    Entry-level cloud computing graduate with a foundational understanding of Microsoft Azure
+                    services, including virtual machines, networking concepts, storage solutions, and access
+                    management. Seeking a fresher or trainee Azure administrator role where I can work under
+                    guidance, strengthen my practical skills, and grow into a reliable cloud operations professional.
+                </p>
             </div>
         </section>
 
-        <!-- PROJECT SECTION -->
+        <!-- ── TECHNICAL SKILLS ── -->
+        <section>
+            <h2>Technical Skills</h2>
+
+            <div class="skill-group">
+                <h3>☁️ Microsoft Azure Administration</h3>
+                <ul>
+                    <li>Foundational understanding of Azure Virtual Machines and deployment basics</li>
+                    <li>Understanding of Azure Virtual Networks (VNet), Subnets, and Network Security Groups (NSG)</li>
+                    <li>Familiarity with Azure Storage services — Blob, File, and Disk storage</li>
+                    <li>Understanding of Resource Groups and Azure Resource Manager (ARM) concepts</li>
+                    <li>Basic knowledge of Role-Based Access Control (RBAC)</li>
+                    <li>Awareness of Azure Monitoring and alerting concepts</li>
+                    <li>Hands-on experience with Azure Portal</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3>🖥️ Operating Systems &amp; Networking</h3>
+                <ul>
+                    <li>Linux fundamentals — basic commands and system navigation</li>
+                    <li>Networking fundamentals — IP addressing, DNS basics, TCP/IP concepts</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3>🛠️ Other Skills &amp; Tools</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript — Intermediate level</li>
+                    <li>Microsoft Office — Excel, Word, PowerPoint</li>
+                    <li>Git &amp; GitHub — Version control and repository management</li>
+                </ul>
+            </div>
+
+            <div class="skills-tags">
+                <span class="skill-tag">Azure VMs</span>
+                <span class="skill-tag">Azure VNet</span>
+                <span class="skill-tag">NSG</span>
+                <span class="skill-tag">Azure Storage</span>
+                <span class="skill-tag">RBAC</span>
+                <span class="skill-tag">ARM Templates</span>
+                <span class="skill-tag">Azure Functions</span>
+                <span class="skill-tag">Azure Cosmos DB</span>
+                <span class="skill-tag">Static Web Apps</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+            </div>
+        </section>
+
+        <!-- ── PROJECT ── -->
         <section>
             <h2>Projects</h2>
             <div class="project-card">
-                <h3>☁️ Azure Cloud Resume Challenge</h3>
+                <div class="project-header">
+                    <h3>☁️ Azure Cloud Resume Challenge</h3>
+                    <span class="project-badge">Live Project</span>
+                </div>
                 <p>
-                    Built and deployed a full-stack cloud resume website with a real-time 
-                    visitor counter. The frontend is hosted on Azure Static Web Apps and 
-                    connected to a serverless Azure Function backend, which reads and 
-                    updates a counter stored in Azure Cosmos DB.
+                    Designed and deployed a full-stack cloud-hosted resume website with a real-time visitor
+                    counter, built entirely on Microsoft Azure at zero cost. The frontend is hosted on
+                    Azure Static Web Apps and connected to a serverless Azure Function backend, which
+                    reads and updates a visitor count stored in Azure Cosmos DB — all auto-deployed
+                    via GitHub Actions CI/CD pipeline.
                 </p>
-                <p><strong>Technologies:</strong> Azure Static Web Apps, Azure Functions, 
-                Azure Cosmos DB, JavaScript, HTML/CSS, GitHub Actions</p>
-                <a href="https://github.com/yourusername/cloud-resume" class="btn">
-                    View on GitHub
-                </a>
+                <div class="project-tech">
+                    <strong>Tech Stack:</strong>
+                    Azure Static Web Apps &nbsp;·&nbsp; Azure Functions &nbsp;·&nbsp;
+                    Azure Cosmos DB &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp;
+                    HTML/CSS &nbsp;·&nbsp; GitHub Actions
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Irshad0607/cloud-resume" class="btn" target="_blank">🐙 View on GitHub</a>
+                    <a href="#" class="btn btn-secondary" target="_blank">🌐 Live Site</a>
+                </div>
             </div>
         </section>
 
-        <!-- EDUCATION SECTION -->
+        <!-- ── LEARNING & TRAINING ── -->
+        <section>
+            <h2>Learning &amp; Training</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>Actively learning Azure cloud administration through self-study and guided practice</li>
+                    <li>Practicing Azure fundamentals using the Azure Portal environment</li>
+                    <li>Preparing for Microsoft Azure certification exams — AZ-900 &amp; AZ-104 (foundational level)</li>
+                    <li>Completed the Azure Cloud Resume Challenge — hands-on project covering serverless architecture, NoSQL databases, and CI/CD pipelines</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ── EDUCATION ── -->
         <section>
             <h2>Education</h2>
             <div class="education-item">
-                <h3>Your Degree — Your College Name</h3>
-                <p>Year of Graduation | Your City, India</p>
+                <div class="edu-row">
+                    <div>
+                        <h3>B.Sc. Computer Science</h3>
+                        <p class="edu-institute">Oriental College Of Education, University of Mumbai</p>
+                    </div>
+                    <div class="edu-right">
+                        <span class="edu-year">2025</span>
+                        <span class="edu-result">8.43 CGPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="edu-row">
+                    <div>
+                        <h3>12th — HSC (Science)</h3>
+                        <p class="edu-institute">SIES College Of Arts, Science &amp; Commerce</p>
+                    </div>
+                    <div class="edu-right">
+                        <span class="edu-year">2022</span>
+                        <span class="edu-result">45.67%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="edu-row">
+                    <div>
+                        <h3>10th — SSC</h3>
+                        <p class="edu-institute">St. Augustines High School, Mumbai</p>
+                    </div>
+                    <div class="edu-right">
+                        <span class="edu-year">2020</span>
+                        <span class="edu-result">71.60%</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- CERTIFICATIONS SECTION -->
-        <section>
-            <h2>Certifications</h2>
-            <div class="cert-item">
-                <p>🏆 Add any certifications here (or remove this section if none yet)</p>
-            </div>
-        </section>
+        <!-- ── FOOTER ── -->
+        <footer>
+            <p>Built with ☁️ Microsoft Azure &nbsp;·&nbsp; Hosted on Azure Static Web Apps &nbsp;·&nbsp; © 2025 Irshad Shaikh</p>
+        </footer>
 
     </div>
 
-    <!-- This JavaScript will fetch the visitor count — we'll complete this on Day 4 -->
+    <!-- ── VISITOR COUNTER SCRIPT ── -->
     <script>
         async function updateCounter() {
             try {
